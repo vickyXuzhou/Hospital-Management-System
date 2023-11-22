@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 .container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+button {
+  background-color: #00000015;
+  cursor: pointer;
 }

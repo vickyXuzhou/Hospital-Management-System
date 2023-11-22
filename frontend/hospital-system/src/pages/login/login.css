@@ -18,7 +18,7 @@
   height: fit-content;
   padding: 0.6rem;
 }
-form {
+.form {
   background-color: #00000015;
   display: flex;
   flex-direction: column;
@@ -26,13 +26,13 @@ form {
   border-radius: 12px;
   padding: 0.5rem;
 }
-input {
+.input {
   padding: 1rem 1.3rem;
 }
 label {
   margin: 0.5rem 0;
 }
-button {
+.button {
   padding: 1rem;
   margin: 1rem 0;
 }
