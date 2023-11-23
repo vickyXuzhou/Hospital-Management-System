@@ -6,4 +6,24 @@
 .DDetailContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  /* margin: 0 auto; */
+  /* width: 90%; */
 }
+.section {
+  /* width: 80%; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: aqua;
+}
+.section1 * {
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  width: 100%;
+}
+/* .DDSection {
+  width: 80%;
+} */

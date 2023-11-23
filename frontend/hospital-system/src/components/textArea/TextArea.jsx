@@ -1,9 +1,18 @@
 import React from "react";
 import "./textArea.css";
-const TextArea = ({ name, value }) => {
+const TextArea = ({ name, tvalue, onChange }) => {
   return (
     <div>
-      <textarea value={value} name={name} id="" cols="30" rows="10"></textarea>
+      <textarea
+        value={tvalue}
+        name={name}
+        id=""
+        cols="30"
+        rows="10"
+        onChange={onChange}
+      >
+        {/* {tvalue} */}
+      </textarea>
     </div>
   );
 };

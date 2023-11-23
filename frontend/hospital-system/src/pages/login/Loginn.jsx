@@ -15,12 +15,13 @@ const Loginn = () => {
     axios
       .post("http://localhost:3001/login", { email, password })
       .then((res) => {
-        if (res.data === "Success") {
-          console.log(res);
+        if (res.data === "success") {
+          console.log("the response", res);
+          toast.success(
+            "Login Successful"
+            // position: toast.POSITION.TOP_RIGHT,
+          );
           navigate("/");
-          toast.success("Login Successful", {
-            position: toast.POSITION.TOP_RIGHT,
-          });
         }
       })
       .catch((err) => {
