@@ -29,7 +29,7 @@ const SignUp = () => {
           <form onSubmit={handleSubmit}>
             <h2 className="formH2">Register</h2>
             <div className="formDiv">
-              <label htmlFor="name">
+              <label htmlFor="name" className="label1">
                 <strong>Name</strong>
               </label>
               <input
@@ -39,7 +39,7 @@ const SignUp = () => {
                 onChange={(e) => setName(e.target.value)}
                 className="input"
               />
-              <label htmlFor="email">
+              <label htmlFor="email" className="label1">
                 <strong>Email</strong>
               </label>
               <input
@@ -49,7 +49,7 @@ const SignUp = () => {
                 name="email"
                 className="input"
               />
-              <label htmlFor="password">
+              <label htmlFor="password" className="label1">
                 <strong>Password</strong>
               </label>
               <input
@@ -60,14 +60,14 @@ const SignUp = () => {
                 className="input"
               />
 
-              <button className="submit" type="submit">
+              <button className="submit button1" type="submit">
                 submit
               </button>
             </div>
           </form>
           <p>Already have an account?</p>
           <Link to="/login">
-            <button className="login">Login</button>
+            <button className="login button1">Login</button>
           </Link>
         </div>
       </div>

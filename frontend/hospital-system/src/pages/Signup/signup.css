@@ -31,10 +31,10 @@
 .input {
   padding: 1rem 1.3rem;
 }
-label {
+.label1 {
   margin: 0.5rem 0;
 }
-button {
+.button1 {
   padding: 1rem;
   margin: 1rem 0;
 }

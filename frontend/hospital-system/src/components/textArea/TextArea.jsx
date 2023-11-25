@@ -7,8 +7,8 @@ const TextArea = ({ name, tvalue, onChange }) => {
         value={tvalue}
         name={name}
         id=""
-        cols="30"
-        rows="10"
+        // cols="30"
+        rows="5"
         onChange={onChange}
       >
         {/* {tvalue} */}

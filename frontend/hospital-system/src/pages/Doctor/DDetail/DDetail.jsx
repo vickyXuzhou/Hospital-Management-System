@@ -9,6 +9,7 @@ const DDetail = () => {
     firstN: "",
     address: "",
     nIC: "",
+    sex: "",
     lastN: "",
     homePhone: "",
     mobilePhone: "",
@@ -44,11 +45,12 @@ const DDetail = () => {
   };
   return (
     <div className="DDetailContainer">
-      <h2>Doctor Details</h2>
+      <h2 className="Atext">Doctor Details</h2>
       <div className="DDSection">
-        <form onSubmit={handleSubmit}>
-          <div className="section">
-            <label htmlFor="D_Id">Doctor ID</label>
+        <form className="DDetailForm" onSubmit={handleSubmit}>
+          {/* <div className="section"> */}
+          <div className="sectionF">
+            <label htmlFor="doctorID">Doctor ID</label>
             <Input
               placeholder="Doctor Id"
               name="doctorID"
@@ -57,6 +59,7 @@ const DDetail = () => {
               onChange={handleOnChange}
             />
           </div>
+          {/* </div> */}
           <div>
             <p>Personal Details</p>
           </div>
@@ -73,11 +76,11 @@ const DDetail = () => {
                 />
               </div>
               <div>
-                <label htmlFor="address"></label>
+                <label htmlFor="sex">Sex</label>
                 <Select
                   options={options}
-                  name="address"
-                  value={inputs.address}
+                  name="sex"
+                  value={inputs.sex}
                   onChange={handleOnChange}
                 />
               </div>
@@ -153,64 +156,65 @@ const DDetail = () => {
                 />
               </div>
             </div>
-            <div>
-              <p>Employee Details</p>
-            </div>
-            <div className="section">
-              <div className="section1">
-                <div>
-                  <label htmlFor="doctorType">Doctor Type</label>
-                  <Select
-                    options={options1}
-                    name="doctorType"
-                    onChange={handleOnChange}
-                    value={inputs.doctorType}
-                  />
-                </div>
-                <div>
-                  <label htmlFor="notes">Notes</label>
-                  <TextArea
-                    name="notes"
-                    tvalue={inputs.notes}
-                    onChange={handleOnChange}
-                  />
-                </div>
+          </div>
+          <div className="width">
+            <p>Employee Details</p>
+          </div>
+          <div className="section">
+            <div className="section1">
+              <div>
+                <label htmlFor="doctorType">Doctor Type</label>
+                <Select
+                  options={options1}
+                  name="doctorType"
+                  onChange={handleOnChange}
+                  value={inputs.doctorType}
+                />
               </div>
+              <div>
+                <label htmlFor="notes">Notes</label>
+                <TextArea
+                  name="notes"
+                  tvalue={inputs.notes}
+                  onChange={handleOnChange}
+                />
+              </div>
+            </div>
 
-              <div className="section1">
-                <div>
-                  <label htmlFor="visitingCharge">Visiting Charge</label>
-                  <Input
-                    placeholder="Visiting Charge"
-                    name="visitingCharge"
-                    value={inputs.visitingCharge}
-                    onChange={handleOnChange}
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="channelingCharge">Channeling Charge</label>
-                  <Input
-                    placeholder="Channeling Charge"
-                    name="channelingCharge"
-                    onChange={handleOnChange}
-                    value={inputs.channelingCharge}
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="bSalary">Basic Salary</label>
-                  <Input
-                    placeholder="Basic Salary"
-                    onChange={handleOnChange}
-                    name="basicSalary"
-                    value={inputs.basicSalary}
-                    type="text"
-                  />
-                </div>
+            <div className="section1">
+              <div>
+                <label htmlFor="visitingCharge">Visiting Charge</label>
+                <Input
+                  placeholder="Visiting Charge"
+                  name="visitingCharge"
+                  value={inputs.visitingCharge}
+                  onChange={handleOnChange}
+                  type="text"
+                />
+              </div>
+              <div>
+                <label htmlFor="channelingCharge">Channeling Charge</label>
+                <Input
+                  placeholder="Channeling Charge"
+                  name="channelingCharge"
+                  onChange={handleOnChange}
+                  value={inputs.channelingCharge}
+                  type="text"
+                />
+              </div>
+              <div>
+                <label htmlFor="bSalary">Basic Salary</label>
+                <Input
+                  placeholder="Basic Salary"
+                  onChange={handleOnChange}
+                  name="basicSalary"
+                  value={inputs.basicSalary}
+                  type="text"
+                />
               </div>
             </div>
           </div>
+
           <button type="submit">Submit</button>
         </form>
       </div>
