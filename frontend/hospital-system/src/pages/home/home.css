@@ -13,3 +13,7 @@ button {
   background-color: #00000015;
   cursor: pointer;
 }
+.button1 {
+  padding: 1rem;
+  margin: 1rem 0;
+}

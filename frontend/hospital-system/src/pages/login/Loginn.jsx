@@ -21,7 +21,7 @@ const Loginn = () => {
             "Login Successful"
             // position: toast.POSITION.TOP_RIGHT,
           );
-          navigate("/");
+          navigate("/frontPage");
         }
       })
       .catch((err) => {

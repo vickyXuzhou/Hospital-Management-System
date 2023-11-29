@@ -3,6 +3,7 @@ import Input from "../../../components/input/Input.jsx";
 import "./ddtail.css";
 import Select from "../../../components/select/Select.jsx";
 import TextArea from "../../../components/textArea/TextArea.jsx";
+import IconContainer from "../../../compound/iconContainer/IconContainer.jsx";
 const DDetail = () => {
   const [inputs, setInputs] = useState({
     doctorID: "",
@@ -215,9 +216,12 @@ const DDetail = () => {
             </div>
           </div>
 
-          <button type="submit">Submit</button>
+          <button className="button1" type="submit">
+            Submit
+          </button>
         </form>
       </div>
+      <IconContainer />
     </div>
   );
 };

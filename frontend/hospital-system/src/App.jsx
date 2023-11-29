@@ -16,15 +16,15 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/frontPage" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Loginn />} />
+          <Route path="/" element={<Loginn />} />
           <Route path="/DoctorDetail" element={<DDetail />} />
           <Route path="/ViewDoctorDetails" element={<ViewDocDetails />} />
           <Route path="/MedicalService" element={<MedicalService />} />
           <Route path="/ViewMedicalService" element={<ViewMedicalService />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>,                                                      
     </>
   );
 }

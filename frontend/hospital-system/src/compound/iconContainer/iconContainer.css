@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.IconSection1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: white;
+}
+.lightBlue {
+  color: blue;
+  font-size: 2rem;
+}
+.green {
+  color: green;
+  font-size: 2rem;
+}
+.iconBtn {
+  display: flex;
+  background-color: #00000035;
+  padding: 0 5rem;
+  border-radius: 10px;
+  align-items: center;
+}
