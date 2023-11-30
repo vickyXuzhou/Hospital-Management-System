@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./input.css";
 const Input = ({ type, value, placeholder, name, inputDisabled, onChange }) => {
   return (
-    <div>
+    <div className="appInput">
       <input
         type={type}
         value={value}

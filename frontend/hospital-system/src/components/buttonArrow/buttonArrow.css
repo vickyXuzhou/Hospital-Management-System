@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.lightBlue {
+  color: blue;
+  font-size: 2rem;
+  background-color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+}
+.green {
+  border-radius: 12px;
+  color: green;
+  font-size: 2rem;
+  background-color: white;
+  padding: 0.8rem 1.6rem;
+}
