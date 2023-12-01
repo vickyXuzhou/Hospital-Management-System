@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container {
+.loginContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,5 +45,16 @@
 .login {
   padding: 0.5rem;
   margin: 0.2rem 0;
+  border-radius: 12px;
+}
+.signUp {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.signUp p {
+  padding: 0 0.5rem;
+}
+.signUpBtn {
   border-radius: 12px;
 }

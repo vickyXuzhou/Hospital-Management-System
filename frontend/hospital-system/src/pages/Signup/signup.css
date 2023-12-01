@@ -10,6 +10,12 @@
   justify-content: center;
   height: 100vh;
 }
+.signupform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .formDiv {
   display: flex;
   flex-direction: column;

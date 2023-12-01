@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./login.css";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import React from 'react'
@@ -30,7 +30,7 @@ const Loginn = () => {
   };
   return (
     <div>
-      <div className="container">
+      <div className="loginContainer">
         <form className="form" onSubmit={handleSubmit}>
           <h2 className="formH2">Login</h2>
           <div className="formDiv">
@@ -60,6 +60,12 @@ const Loginn = () => {
             </button>
           </div>
         </form>
+        <div className="signUp">
+          <p>Don't have an account?</p>
+          <Link to="/signup">
+            <button className="signUpBtn button">SignUp</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 // import React from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import "./signup.css";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 import axios from "axios";
@@ -26,7 +25,7 @@ const SignUp = () => {
     <div>
       <div className="container">
         <div className="formSection">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="signupform">
             <h2 className="formH2">Register</h2>
             <div className="formDiv">
               <label htmlFor="name" className="label1">
@@ -66,7 +65,7 @@ const SignUp = () => {
             </div>
           </form>
           <p>Already have an account?</p>
-          <Link to="/login">
+          <Link to="/">
             <button className="login button1">Login</button>
           </Link>
         </div>
