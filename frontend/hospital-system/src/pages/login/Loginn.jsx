@@ -13,7 +13,7 @@ const Loginn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/login", { email, password })
+      .post("http://localhost:3001/api/auth/login", { email, password })
       .then((res) => {
         if (res.data === "success") {
           console.log("the response", res);
@@ -25,7 +25,8 @@ const Loginn = () => {
         }
       })
       .catch((err) => {
-        toast.success(err);
+        console.log(err);
+        // toast.success(err);
       });
   };
   return (

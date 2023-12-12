@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <ToastContainer />
-
       <BrowserRouter>
         <Routes>
           <Route path="/frontPage" element={<Home />} />
@@ -24,7 +23,7 @@ function App() {
           <Route path="/MedicalService" element={<MedicalService />} />
           <Route path="/ViewMedicalService" element={<ViewMedicalService />} />
         </Routes>
-      </BrowserRouter>,                                                      
+      </BrowserRouter>
     </>
   );
 }

@@ -13,11 +13,15 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/register", { name, email, password })
+      .post("http://localhost:3001/api/auth/register", {
+        name,
+        email,
+        password,
+      })
 
       .then((res) => {
         console.log(res);
-        navigate("/login");
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
