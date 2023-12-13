@@ -5,6 +5,7 @@ import Select from "../../../components/select/Select.jsx";
 import TextArea from "../../../components/textArea/TextArea.jsx";
 import ButtonArrow from "../../../components/buttonArrow/ButtonArrow.jsx";
 import ButtonAction from "../../../components/buttonAction/ButtonAction.jsx";
+import axios from "axios";
 const DDetail = () => {
   const [inputs, setInputs] = useState({
     doctorID: "",
@@ -44,6 +45,7 @@ const DDetail = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs);
+    // axios.post("http://localhost:3001/api/auth/doctor/docDetails");
   };
   return (
     <div className="ddtail">
@@ -241,7 +243,7 @@ const DDetail = () => {
         </div>
         <div className="buttonAction">
           <div className="arrowSection">
-            <ButtonAction iconName="add" className="lightBlue" type="" />
+            <ButtonAction iconName="add" className="lightBlue" type="submit" />
             <ButtonAction iconName="edit" className="green" type="" />
             <ButtonAction iconName="delete" className="green" type="" />
             <ButtonAction iconName="refresh" className="lightBlue" type="" />
